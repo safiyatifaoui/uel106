@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma galerie photo</title>
-    <!-- On réutilise le même CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="./media1/logo2.png">
+    <link rel="icon" type="image/png" href="./image/logo2.png">
 </head>
 
 <body id="enhaut">
 
-    <!-- Barre de navigation (même style que sur la page principale) -->
+    <!-- Barre de navigation -->
     <nav>
         <img id="logo" src="./image/logo.png" alt="logo">
-        <ul>
+
+        <!-- Bouton burger pour mobile -->
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul id="navMenu">
             <li><a class="anav" href="index.html#enhaut">Accueil</a></li>
             <li><a class="anav" href="index.html#aller">Mon parcours</a></li>
             <li><a class="anav" href="index.html#compétence">Compétences</a></li>
@@ -32,7 +39,7 @@
         </p>
 
         <div class="gallery">
-            <!-- Tu remplaces les src par tes vraies images -->
+            <!-- Remplace par tes vraies images -->
             <img src="./image/1.jpeg" alt="Photo 1">
             <img src="./image/2.jpeg" alt="Photo 2">
             <img src="./image/3.jpg" alt="Photo 3">
@@ -53,8 +60,8 @@
             <img src="./image/18.jpeg" alt="Photo 18">
             <img src="./image/19.jpeg" alt="Photo 19">
             <img src="./image/20.jpeg" alt="Photo 20">
-            <img src="./image/ 21.jpg" alt="Photo 21">
-            <img src="./image/ 22.jpg" alt="Photo 22">
+            <img src="./image/21.jpg" alt="Photo 21">
+            <img src="./image/22.jpg" alt="Photo 22">
             <img src="./image/23.jpg" alt="Photo 23">
             <img src="./image/24.jpg" alt="Photo 24">
             <img src="./image/25.jpg" alt="Photo 25">
@@ -63,16 +70,10 @@
             <img src="./image/28.jpg" alt="Photo 28">
             <img src="./image/29.jpg" alt="Photo 29">
             <img src="./image/30.jpg" alt="Photo 30">
-          
-
-            <!-- Tu peux en ajouter autant que tu veux -->
         </div>
     </section>
 
-
-
-
-    <!-- Pied de page (tu peux reprendre exactement le même que sur index.html) -->
+    <!-- Pied de page -->
     <footer>
         <div id="footer" class="footer-container">
             <div class="footer-section">
@@ -96,7 +97,8 @@
                     <li><a class="footer1" href="https://www.instagram.com/_888safiya/">Instagram</a></li>
                     <li>
                         <p>Pour me contacter :
-                            <a class="footer1" href="mailto:safiya.tifaoui@etu.unilim.fr?subject=J'ai visité votre site">
+                            <a class="footer1"
+                                href="mailto:safiya.tifaoui@etu.unilim.fr?subject=J'ai visité votre site">
                                 safiya.tifaoui@etu.unilim.fr
                             </a>
                         </p>
@@ -108,6 +110,24 @@
             <p>&copy; 2024 Safiya Tifaoui. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <!-- Script pour le menu burger -->
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+            });
+
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('open');
+                });
+            });
+        }
+    </script>
 
 </body>
 </html>
