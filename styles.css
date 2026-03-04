@@ -1,28 +1,21 @@
-/* ----------- RESET & BASE ----------- */
+/* Style global */
 * {
-    margin: 0;
+
     padding: 0;
+    font-family: 'Arial', sans-serif;
+ 
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #E4E2DD;
-    color: #000;
-}
-
-/* ----------- NAVIGATION ----------- */
+/* Navigation */
 nav {
+  
     z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 16px;
+    padding: 15px 0;
     background: #E4E2DD;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -31,21 +24,28 @@ nav {
 }
 
 #logo {
-    width: 140px;
+    width: 200px;
+    margin-left: 20px;
 }
 
-/* Menu desktop */
 nav ul {
     display: flex;
     list-style: none;
-    gap: 40px;
+    margin-right: 100px;
+    gap: 70px;
 }
 
+nav ul li {
+    margin: 0 15px;
+}
+
+
+
 nav ul li a {
+   
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 0.95rem;
     transition: color 0.3s ease;
 }
 
@@ -53,86 +53,74 @@ nav ul li a:hover {
     color: #C67B7B;
 }
 
-/* Bouton burger (mobile) */
-.nav-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 4px;
-    cursor: pointer;
-}
-
-.nav-toggle span {
-    width: 22px;
-    height: 2px;
-    background: #333;
-    border-radius: 2px;
-}
-
-/* ----------- SECTION ACCUEIL ----------- */
-
+/* Section accueil */
 .div1 {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    padding: 120px 8% 60px; /* 120px pour compenser la nav fixe */
+    padding: 15% 8%;
     min-height: 100vh;
     background: #E4E2DD;
-    position: relative;
 }
 
 .div1 h1 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color: #212121;
     margin-bottom: 20px;
 }
 
-.div1 span {
+span{
     color: #C67B7B;
 }
+
+
+
 
 .div1 p {
     color: #555;
     line-height: 1.6;
     margin: 20px 0;
-    max-width: 650px;
+}
+
+.moncv {
+    background: #C67B7B;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#E4E2DD;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.moncv:hover {
+    background: #a15656;
 }
 
 .moi {
     position: absolute;
-    bottom: 8%;
-    right: 6%;
-    width: 40%;
-    max-width: 320px;
+    bottom: 10%;
+    right: 5%;
+    width: 45%;
     border-radius: 50%;
 }
 
-/* ----------- SECTION PARCOURS ----------- */
-
+/* Section parcours */
 .section1 {
-    padding: 60px 8% 40px;
+    padding: 50px 8%;
     background: white;
 }
 
 .dipexp {
-    margin-top: 40px;
+    margin-top: 70px;
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
     color: #333;
 }
 
-span {
-    color: #C67B7B;
-}
-
-.formations {
+.formations{
     background: white;
-}
-
-.diplome {
-    margin: 40px 0 20px;
-    font-size: 2rem;
-    text-align: center;
 }
 
 .formation-container {
@@ -142,15 +130,22 @@ span {
     justify-content: center;
 }
 
+
+.diplome{
+  
+   margin: 40px;
+    font-size: 2rem;
+    text-align: center;
+}
+
 .forsim {
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    background-color: #E4E2DD;
+    align-items: center;
+    background-color:#E4E2DD;
     border: 2px solid #C67B7B;
     border-radius: 10px;
     padding: 20px;
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -163,17 +158,18 @@ span {
 .icon {
     font-size: 1.8rem;
     color: #C67B7B;
+    margin-right: 15px;
 }
 
 .content h3 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #C67B7B;
 }
 
 .content p {
     margin: 5px 0;
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #333;
 }
 
@@ -250,25 +246,49 @@ h2 {
 .bar80 .skill-bar-fill { width: 80%; }
 .bar70 .skill-bar-fill { width: 70%; }
 
-/* ----------- PROJETS ----------- */
 
-.projets {
-    margin-top: 80px;
-    text-align: center;
-    font-size: 2rem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------- Projet -----------------------*/
+
+
+.projets{
+    margin-top: 200px;
 }
 
+
+
+/* Section Projets */
 .section {
-    padding: 40px 8%;
-    background-color: #E4E2DD;
+    padding: 50px 30px;
+    background-color: #E4E2DD ;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
 }
 
 .projets-container {
-    margin-top: 40px;
+    margin-top: 100px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
+
+    
 }
 
 .projet-card {
@@ -279,12 +299,11 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     max-width: 300px;
-    width: 100%;
     text-align: center;
 }
 
 .projet-card:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 .projet-card img {
@@ -296,33 +315,32 @@ h2 {
 }
 
 .projet-card img:hover {
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .projet-info {
-    padding: 15px 12px 20px;
+    padding: 20px;
 }
 
 .projet-info h3 {
-    margin-bottom: 8px;
-    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
     color: #C67B7B;
 }
 
 .projet-info p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #555;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .projet-info .btn {
     background-color: #C67B7B;
     color: #FFF;
-    padding: 9px 14px;
+    padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.9rem;
     transition: background-color 0.3s;
 }
 
@@ -330,48 +348,104 @@ h2 {
     background-color: #A15656;
 }
 
-/* ----------- GALERIE ----------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section galerie */
+
+
 
 .galerie {
-    margin-top: 120px;
-    padding: 40px 8% 60px;
+    padding: 20px;
+  
     text-align: center;
-    background-color: #E4E2DD;
+    margin-top: 150px;
+    text-align: center;
+    padding: 20px;
 }
 
 .accroche {
     color: black;
-    margin-top: 12px;
-    margin-bottom: 24px;
 }
+
+
+
 
 .magalerie {
     display: inline-block;
     background: #C67B7B;
     color: #fff;
-    padding: 10px 22px;
+    padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .magalerie:hover {
     background: #a15656;
 }
 
+
+
+
 .gallery {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .gallery img {
     width: 100%;
+    max-width: 400px; /* tu peux ajuster cette valeur */
     height: auto;
+    margin: 0 auto; /* centre l'image si elle est plus petite que le conteneur */
+    display: block;
     border: 2px solid #C67B7B;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -379,45 +453,68 @@ h2 {
 }
 
 .gallery img:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* ----------- FOOTER ----------- */
 
-footer {
-    background-color: #C67B7B;
-    color: #fff;
-    text-align: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
 
 .logorose {
-    width: 180px;
-    margin-top: 10px;
+    width: 300px;
+    margin-left: 20px;
 }
 
-.footer1 {
-    color: #fff;
-    text-decoration: none;
-}
 
-.footer1:hover {
+.footer1:hover{
     color: black;
+}
+
+
+footer {
+    
+  
+    background-color: #C67B7B;
+    color: #fff;
+    
+    text-align: center;
 }
 
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around;
+
     max-width: 1200px;
-    margin: 40px auto 10px;
-    padding: 0 16px;
+    margin: 100px;
 }
 
 .footer-section {
-    min-width: 220px;
-    max-width: 320px;
+    margin: 15px;
+    min-width: 200px;
 }
 
 .footer-section h3 {
@@ -435,127 +532,52 @@ footer {
     margin: 5px 0;
 }
 
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     padding: 10px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
-/* ----------- MEDIA QUERIES ----------- */
 
-/* Tablette */
-@media (max-width: 992px) {
-    #logo {
-        width: 120px;
-    }
 
-    .div1 {
-        padding-top: 110px;
-    }
 
-    .moi {
-        position: static;
-        margin-top: 20px;
-        align-self: center;
-        width: 55%;
-        max-width: 260px;
-    }
 
-    .skills {
-        margin: 20px 0;
-        justify-content: center;
-    }
-}
 
-/* Mobile */
-@media (max-width: 768px) {
 
-    /* Nav mobile */
-    .nav-toggle {
-        display: flex;
-    }
 
-    nav ul {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #E4E2DD;
-        flex-direction: column;
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        padding: 0 16px;
-        border-top: 1px solid rgba(0,0,0,0.1);
-        transition: max-height 0.3s ease;
-    }
 
-    nav ul.open {
-        max-height: 260px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
 
-    nav ul li {
-        margin: 8px 0;
-    }
 
-    .div1 {
-        padding: 110px 6% 50px;
-    }
 
-    .div1 h1 {
-        font-size: 1.9rem;
-    }
 
-    .div1 p {
-        font-size: 0.95rem;
-    }
 
-    .formation-container {
-        gap: 15px;
-    }
 
-    .forsim {
-        padding: 15px;
-    }
 
-    .competence {
-        margin-top: 40px;
-        font-size: 1.7rem;
-    }
 
-    .projets {
-        margin-top: 40px;
-        font-size: 1.7rem;
-    }
 
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 8px;
-    }
 
-    .footer-container {
-        margin: 20px auto 5px;
-        gap: 15px;
-    }
 
-    .footer-section {
-        text-align: center;
-    }
-}
 
-/* Très petits écrans */
-@media (max-width: 480px) {
-    .div1 h1 {
-        font-size: 1.7rem;
-    }
 
-    .magalerie {
-        font-size: 1.2rem;
-        padding: 8px 16px;
-    }
-
-    .projet-card img {
-        height: 170px;
-    }
-}
