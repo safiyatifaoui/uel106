@@ -33,7 +33,7 @@
          <!-- Section 2 -->
         <div class="gallery">
             
-            <img src="p2.png" alt="Photo 2">
+            <img src="image/p2.png" alt="Photo 2">
 
         </div>
 
@@ -41,7 +41,7 @@
         <!-- Section 3 -->
        <div class="gallery">
            
-           <img src="p3.png" alt="Photo 3">
+           <img src="image/p3.png" alt="Photo 3">
 
        </div>
 
@@ -49,14 +49,14 @@
        <!-- Section 4 -->
       <div class="gallery">
           
-          <img src="p4.png" alt="Photo 4">
+          <img src="image/p4.png" alt="Photo 4">
 
       </div>
       <br>
       <!-- Section 5 -->
      <div class="gallery">
          
-         <img src="p5.png" alt="Photo 5">
+         <img src="image/p5.png" alt="Photo 5">
 
      </div>
 
@@ -64,14 +64,14 @@
      <!-- Section 6 -->
     <div class="gallery">
         
-        <img src="p6.png" alt="Photo 6">
+        <img src="image/p6.png" alt="Photo 6">
 
     </div>
     <br>
     <!-- Section 7 -->
    <div class="gallery">
        
-       <img src="p7.png" alt="Photo 7">
+       <img src="image/p7.png" alt="Photo 7">
 
    </div>
 
@@ -79,7 +79,8 @@
    <!-- Section 8 -->
   <div class="gallery">
       
-      <img src="p8.png" alt="Photo 8">
+   
+      <img src="image/p8.png" alt="Photo 8">
 
   </div>
 
@@ -87,14 +88,14 @@
   <!-- Section 9 -->
  <div class="gallery">
      
-     <img src="p9.png" alt="Photo 9">
+     <img src="image/p9.png" alt="Photo 9">
 
  </div>
  <br>
  <!-- Section 10 -->
 <div class="gallery">
     
-    <img src="p10.png" alt="Photo 10">
+    <img src="image/p10.png" alt="Photo 10">
 
 </div>
 
@@ -102,14 +103,14 @@
 <!-- Section 11 -->
 <div class="gallery">
    
-   <img src="p11.png" alt="Photo 11">
+   <img src="image/p11.png" alt="Photo 11">
 
 </div>
 <br>
 <!-- Section 12 -->
 <div class="gallery">
    
-   <img src="p12.png" alt="Photo 12">
+   <img src="image/p12.png" alt="Photo 12">
 
 </div>
 
