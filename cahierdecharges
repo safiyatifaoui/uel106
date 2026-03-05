@@ -25,7 +25,7 @@
        <p class="accroche"> "Un cahier des charges clair, c’est la clé pour transformer les besoins d’une entreprise en un projet solide."</p>
        <br>
         <div class="gallery">
-            <img src="media1/p1.png" alt="Photo 1">
+            <img src="p1.png" alt="Photo 1">
        
 
         </div>
@@ -33,7 +33,7 @@
          <!-- Section 2 -->
         <div class="gallery">
             
-            <img src="media1/p2.png" alt="Photo 2">
+            <img src="p2.png" alt="Photo 2">
 
         </div>
 
@@ -41,7 +41,7 @@
         <!-- Section 3 -->
        <div class="gallery">
            
-           <img src="media1/p3.png" alt="Photo 3">
+           <img src="p3.png" alt="Photo 3">
 
        </div>
 
@@ -49,14 +49,14 @@
        <!-- Section 4 -->
       <div class="gallery">
           
-          <img src="media1/p4.png" alt="Photo 4">
+          <img src="p4.png" alt="Photo 4">
 
       </div>
       <br>
       <!-- Section 5 -->
      <div class="gallery">
          
-         <img src="media1/p5.png" alt="Photo 5">
+         <img src="p5.png" alt="Photo 5">
 
      </div>
 
@@ -64,14 +64,14 @@
      <!-- Section 6 -->
     <div class="gallery">
         
-        <img src="media1/p6.png" alt="Photo 6">
+        <img src="p6.png" alt="Photo 6">
 
     </div>
     <br>
     <!-- Section 7 -->
    <div class="gallery">
        
-       <img src="media1/p7.png" alt="Photo 7">
+       <img src="p7.png" alt="Photo 7">
 
    </div>
 
@@ -79,7 +79,7 @@
    <!-- Section 8 -->
   <div class="gallery">
       
-      <img src="media1/p8.png" alt="Photo 8">
+      <img src="p8.png" alt="Photo 8">
 
   </div>
 
@@ -87,14 +87,14 @@
   <!-- Section 9 -->
  <div class="gallery">
      
-     <img src="media1/p9.png" alt="Photo 9">
+     <img src="p9.png" alt="Photo 9">
 
  </div>
  <br>
  <!-- Section 10 -->
 <div class="gallery">
     
-    <img src="media1/p10.png" alt="Photo 10">
+    <img src="p10.png" alt="Photo 10">
 
 </div>
 
@@ -102,14 +102,14 @@
 <!-- Section 11 -->
 <div class="gallery">
    
-   <img src="media1/p11.png" alt="Photo 11">
+   <img src="p11.png" alt="Photo 11">
 
 </div>
 <br>
 <!-- Section 12 -->
 <div class="gallery">
    
-   <img src="media1/p12.png" alt="Photo 12">
+   <img src="p12.png" alt="Photo 12">
 
 </div>
 
